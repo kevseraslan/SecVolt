@@ -1,0 +1,20 @@
+ALGORİTMA: Collatz_Anahtar_Ureteci
+GİRDİ: Baslangic_Sayisi (seed), Anahtar_Uzunlugu (L)
+ÇIKTI: L bitlik İkili Anahtar
+
+DEĞİŞKENLER:
+    n = Baslangic_Sayisi
+    anahtar = ""
+
+DÖNGÜ (anahtar uzunluğu < L olduğu sürece):
+    EĞER (n çift ise):
+        n = n / 2
+        anahtar = anahtar + "0"
+    DEĞİLSE (n tek ise):
+        n = 3n + 1
+        anahtar = anahtar + "1"
+    
+    EĞER (n == 1): // Döngü kısıra girerse seed'i güncelle
+        n = n + Önceki_Baslangic_Sayisi + 1
+
+DÖNDÜR anahtar
